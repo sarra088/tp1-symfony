@@ -94,5 +94,7 @@ class Article
 
         return $this;
     }
+    #[ORM\ManyToOne(inversedBy: 'articles')]
+private ?Categorie $categorie = null;
 }
 
